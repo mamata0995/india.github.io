@@ -1,0 +1,168 @@
+*{
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(232, 119, 119, 0.4),rgba(232,119,119,0.3)), url(https://wallpapercave.com/wp/wp6016803.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+nav{
+    display: inline-flex;
+    background-color: rgba(208, 213, 219, 0.4);
+    width: 100%;
+    height: 90px;
+    padding-top: 20px;
+}
+
+nav .menu ul{
+    display: flex;
+   
+    
+    
+}
+
+nav .menu ul li{
+    display: block;
+    }
+
+    nav .menu ul li a{
+    text-decoration: none;
+    padding: 30px;
+    width:20%;
+    color: #fff;
+    }
+  
+    .menu{
+      position: relative;
+      margin-left: 50px;
+      left: 500px;
+      font-size: 25px;
+      font-family: 'Spline Sans Mono', monospace;
+
+    }  
+
+    .logo{
+        margin-left: 20px;
+        font-family: 'Bubblegum Sans', cursive;
+        font-size: 28px;
+        letter-spacing: 5px;
+        animation:animate 2s linear infinite;
+    }
+
+    
+    @keyframes animate{
+        0%{transform: scale(0.1,0.2); opacity: 0.4;}
+       50%{transform: scale(0.8,0.9); opacity: 0.8;}
+        100%{transform: scale(1.0,1.2);opacity: 1;}
+    }
+
+  
+    
+    main{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+     section h3{
+        font-size: 45px;
+        font-weight: 200;
+        letter-spacing: 4px;
+        color:rgb(149, 10, 10);
+        text-shadow: 1px 1px 3px black;
+      }
+
+      section h1{
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color:rgb(149, 10, 10);
+        text-shadow: 1px 1px 3px black;
+        margin: 15px 0px 10px 0px;
+      }
+      
+      section p{
+          font-size: 25px;
+          color:rgb(149, 10, 10);
+          word-spacing:2px;
+          margin-bottom: 25px;
+          text-shadow:1px 1px 1px black;
+      }
+
+      section a{
+        color:rgb(149, 10, 10);
+        padding: 12px 30px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: all .5s ease;
+        
+    }
+
+    section .btnone{
+        background: #fff;
+        color:#000;
+        cursor: pointer;
+    }
+    section .btnone:hover{
+        background: lightcoral;
+        color:white;
+        cursor: pointer;
+        
+    }
+
+    section .btntwo{
+        background: #00b894;
+        color:white;
+        cursor: pointer;
+    }
+
+    section .btntwo:hover{
+        background:lightcoral;
+        color:#000;
+        cursor: pointer;
+        
+    }
+
+       .change-content:after{
+           content: '';
+           animation: changetext 10s infinite linear;
+           color: #00b894;
+           font-size: 50px;
+           font-weight: 700;
+           letter-spacing: 3px;
+           text-shadow: 1px 1px 3px black;
+           margin: 15px 0px 10px 0px;
+           padding-left: 10px;
+       }
+
+       @keyframes changetext{
+           0%{ content:"Pune";}
+           20%{ content:"Agra";}
+           30%{ content:"Darjeeling";}
+           40%{ content:"Kashmir";}
+           50%{ content:"Mumbai";}
+           60%{ content:"Banglore";}
+           70%{ content:"Hampi";}
+           80%{ content:"Chennai";}
+           90%{ content:"Jammu";} 
+           100%{ content:"Lukhnow";}
+
+       }
+
+
+
+
